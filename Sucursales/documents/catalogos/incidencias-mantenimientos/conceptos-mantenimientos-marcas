@@ -1,0 +1,43 @@
+## Listado de marcas de conceptos de mantenimientos
+Regresa el listado de marcas de conceptos de mantenimientos de un concepto de mantenimiento<br>
+
+ **URL**
+
+    /api/catalogos/incidencias-mantenimientos/conceptos-mantenimientos-marcas/{conceptoMantenimientoId}
+
+ **Method:**
+
+  `GET`
+  
+ **Headers**
+   
+      Authorization: Bearer access_token
+      Accept: application/json
+      Content-Type: multipart/form-data 
+
+**Success Response:**
+
+* **Code:** 200 <br />
+  **Content:**
+
+            {
+                "conceptoMantenimientoMarca": [
+                    {
+                        "id": 1,
+                        "concepto_mantenimiento_id": 1,
+                        "nombre": "Marca 1 updated",
+                        "precio": "16.89",
+                        "created_at": "2022-11-08 16:19:04",
+                        "updated_at": "2022-11-08 16:27:56"
+                    }
+                ]
+            }
+
+**Error Response:**
+
+  * **Code:** 401 Unauthorized <br />
+    **Content:** 
+  
+          {
+            "error": "Unauthenticated."
+          }

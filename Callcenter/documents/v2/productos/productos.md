@@ -555,3 +555,51 @@ EJ.
               }
             ]
         }    
+
+**Búsqueda de sugerencias de productos**
+----
+Realiza busqueda de productos
+
+**URL**
+
+    /api-v2/productos/search/suggestions
+
+**Method:**
+
+`GET`
+
+**URL Params**
+
+- Ejemplo URI:
+    - `/api-v2/productos/search/suggestions?nombre=vaporub`
+
+**Objeto de respuesta**
+
+        {
+            "productos": [
+                {
+                    "nombre": "VAPORUB INHALADOR BLIST C/1"
+                },
+                {
+                    "nombre": "VAPORUB INHALADOR BLIST C/1"
+                },
+                {
+                    "nombre": "VAPORUB REG UNG 100 GR"
+                },
+                {
+                    "nombre": "VAPORUB REG UNG 50GR"
+                },
+                {
+                    "nombre": "VS VAPORUB 12 GR LATA C/1"
+                },
+                {
+                    "nombre": "VICK VAPORUB 50 GR + INHALAD"
+                },
+                {
+                    "nombre": "VICK VAPORUB 50 GR + INHALAD"
+                },
+                {
+                    "nombre": "VICK VAPORUB 50 GR + INHALAD"
+                }
+            ]
+        }

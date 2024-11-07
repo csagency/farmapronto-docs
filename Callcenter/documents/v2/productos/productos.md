@@ -46,6 +46,12 @@
 
    Para conocer la disponibilidad usar la  includes[]=ciudadesCobertura`
 
+   **Filtro por categoria**
+
+Añadir en el request el siguiente valor  `categoria` para obtener productos por categoría, no enviar el parametro de `nombre`. Ej.
+
+    `/api-v2/productos?categoria=bebés`
+
 
   
 **Incluir promociones**
